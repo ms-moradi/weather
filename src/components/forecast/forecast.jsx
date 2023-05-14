@@ -1,5 +1,10 @@
+import FutureDay from "../FutureDay/FutureDay";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 
-const Forecast =()=>{
+const daysIndex = [4, 12, 20, 28];
+
+const Forecast =({cityWeatherFuture, nameCity})=>{
     return(
         <Grid sx={{
             padding:'30px 0',
