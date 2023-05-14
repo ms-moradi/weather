@@ -12,8 +12,23 @@ import Typography from '@mui/material/Typography';
 
 const DialogSearch =({setOpenDialogSearch, openDialogSearch, setSelectCity,setSearch})=>{
     return(
-        <>
-        </>
+        <Dialog onClose={handelCloseDialogSearch} open={openDialogSearch}>
+            <TableContainer component={Paper}>
+                <Table sx={{ minWidth: 300 }}>
+                    <TableBody>
+                        {cities.map(city =>(
+                            <TableRow cursor='pointer' sx={{width:'300px'}}>
+                                <TableCell align="center" onClick={()=>handleSelectCity(city.id)}>
+                                    <Typography sx={{cursor:'pointer'}}>
+                                        {city.name}
+                                    </Typography>
+                                </TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
+        </Dialog>
     )
 }
 
