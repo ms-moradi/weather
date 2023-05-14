@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 
 
 
-const DialogSearch =()=>{
+const DialogSearch =({setOpenDialogSearch, openDialogSearch, setSelectCity,setSearch})=>{
     return(
         <>
         </>
