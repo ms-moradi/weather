@@ -2,7 +2,9 @@ import Grid from "@mui/material/Grid";
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import Typography  from "@mui/material/Typography";
 
-const FutureDay =()=>{
+
+
+const FutureDay =({cityWeatherFuture, index})=>{
     return(
         <Grid container sx={{
             margin:'0 15px', 
