@@ -4,18 +4,18 @@ import { Outlet } from "react-router-dom";
 const Layout =()=>{
     return(
         <>
-            <Main style={{
+            <main style={{
                 width:'100%',
                 height:'700px',
                 padding:'30px 20px',
                 display:'flex',
-                backgroundColor:'Black',
+                backgroundColor:'blue',
                 backgroundSize: 'cover',
                 opacity:'.9'
                 }}
             >
                 <Outlet/>
-            </Main>
+            </main>
         </>
     )
 }
