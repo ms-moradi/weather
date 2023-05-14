@@ -9,9 +9,12 @@ const Layout =()=>{
                 height:'700px',
                 padding:'30px 20px',
                 display:'flex',
+                justifyContent:'center',
+                alignContent:'center',
                 backgroundColor:'blue',
                 backgroundSize: 'cover',
-                opacity:'.9'
+                opacity:'.9',
+                paddingTop:'50px'
                 }}
             >
                 <Outlet/>
