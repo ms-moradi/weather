@@ -11,6 +11,18 @@ import Typography from '@mui/material/Typography';
 
 
 const DialogSearch =({setOpenDialogSearch, openDialogSearch, setSelectCity,setSearch})=>{
+
+    const handelCloseDialogSearch =()=>{
+        setOpenDialogSearch(false)
+    }
+
+    const handleSelectCity =(id)=>{
+        const select = (cities.filter(city => city.id ===id))
+        setSelectCity(select[0].name)
+        setSearch(select[0].name)
+        setOpenDialogSearch(false)
+    }
+
     return(
         <Dialog onClose={handelCloseDialogSearch} open={openDialogSearch}>
             <TableContainer component={Paper}>
