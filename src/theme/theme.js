@@ -1,4 +1,4 @@
-import vazir from '../assets/font/Vazir.woff2';
+import vazir from '../assets/font/Vazir.ttf';
 import {createTheme} from "@mui/material/styles";
 
 export const theme = createTheme({
@@ -15,5 +15,6 @@ export const theme = createTheme({
           }
         `,
       },
-    },
-  });
+   },
+});
+
