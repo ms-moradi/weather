@@ -1,7 +1,6 @@
 import React,{useState , useEffect} from "react";
 import SearchCity from "../../components/search/search";
 import CardCity from "../../components/cardCity/cardCity";
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import cities from "../../data/dataCities";
 import Grid from "@mui/material/Grid";
 import {handleGetOneDayWeather} from "../../api/api";
@@ -43,7 +42,6 @@ const Home=()=>{
 
     return(
         <Grid container sx={{display:'flex',flexDirection:'column', gap:'30px'}}>
-            {/* <FavoriteBorderIcon sx={{color:'#fff', fontSize:35}}/> */}
             <SearchCity setSearch={setSearch} search={search} selectCity={selectCity} setSelectCity={setSelectCity}/>
             <Grid container item sx={{margin:'20px 0', display:'flex',justifyContent:'center'}}>
                 {cities.filter(city => search === '' ? '' : city.name.includes(search))
