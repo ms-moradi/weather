@@ -6,6 +6,13 @@ import InputBase from '@mui/material/InputBase';
 
 
 const Search =({setSearch, search, selectCity, setSelectCity})=>{
+
+    const [openDialogSearch , setOpenDialogSearch] = useState(false)
+
+    const handleOpenDialogSearch =()=>{
+        setOpenDialogSearch(true)
+    }
+    
     return(
         <Grid>
             <InputBase sx={{borderBottom:'2px solid #fff',color:'#fff',padding:'0 15px'}} value={search} onClick={handleOpenDialogSearch}/>
