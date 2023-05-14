@@ -7,7 +7,7 @@ import TireRepairIcon from '@mui/icons-material/TireRepair';
 import AirIcon from '@mui/icons-material/Air';
 import OpacityIcon from '@mui/icons-material/Opacity';
 
-const CardCity =()=>{
+const CardCity =({cityWeather,cityID})=>{
     return(
         <Grid container  item sx={{
             width:{xs:'300px',sm:'500px'}, 
