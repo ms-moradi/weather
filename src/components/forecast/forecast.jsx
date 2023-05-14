@@ -1,4 +1,4 @@
-import FutureDay from "../FutureDay/FutureDay";
+import FutureDay from "../futureDay/futureDay";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
